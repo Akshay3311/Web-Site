@@ -1,0 +1,110 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body Header */
+
+#body-header{
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(image/dragon-blood-moon-3440x1440-11087.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container{
+    margin-top: 20vh;
+}
+
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icons li a i{
+    /color: red;/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+
+/*
+This is a CSS style rule that applies to an icon element inside an anchor element 
+that is a child of a list item element with a class of "social-icons", and specifies a hover effect.
+
+When the user hovers over the icon element, the CSS property "box-shadow" is applied to the element, 
+creating a shadow effect. 
+The shadow has a horizontal offset of 0px, a vertical offset of 0px, a blur radius of 6px, 
+a spread radius of 4px, and a color that is a semi-transparent pinkish-red color with an 
+RGBA value of (230, 196, 196, 0.3). 
+This gives a subtle, glowing effect to the icon when the user hovers over it with their cursor
+
+
+RGBA is a color model that stands for Red, Green, Blue, and Alpha, where Alpha represents the opacity or 
+transparency of the color. The values for each of the four parameters are expressed as numbers 
+between 0 and 255 or as decimal values between 0 and 1.
+
+In this case, the RGBA value (230, 196, 196, 0.3) represents a color that is a shade of pinkish-red, with the 
+following values:
+
+Red: 230
+Green: 196
+Blue: 196
+Alpha: 0.3
+
+The values for red, green, and blue indicate the intensity of each color component, 
+with 0 being the minimum intensity and 255 being the maximum intensity. 
+The alpha value indicates the transparency of the color, with 0 representing full transparency 
+and 1 representing full opacity. In this case, the alpha value of 0.3 means that the color is 
+partially transparent, allowing some of the underlying elements to show through.
+*/
+
+}
