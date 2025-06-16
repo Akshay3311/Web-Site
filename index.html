@@ -1,54 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAksahy</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akshay Kharpas</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #1c1c1c, #2c3e50); /* Dark gradient */
+    color: #ffffff; /* white text */
+  }
+
+  section {
+    padding: 50px 20px;
+  }
+
+  .section-heading {
+    color: #00ffff; /* Cyan color for section headings */
+  }
+
+  .progress-bar {
+    background-color: #555;  /* dark grey bar background */
+  }
+
+  .progress {
+    background-color: #00ffff; /* Cyan bar fill */
+  }
+</style>
 
 
-<body>
-    <header id="body-header">
-        <nav>
-            <ul class="horizontal-list text-center nav-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#portfolio">Portfoilo</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        </nav>
+
+  <header id="body-header">
+    <nav>
+      <ul class="horizontal-list text-center nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Project">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+   <div id="name-social-container">
+  <div class="text-center">
+    <img src="image/Akshay.jpg" alt="Akshay Kharpas" class="home-profile-rectangle"/>
+    <h1 id="my-name">Akshay Kharpas</h1>
+<p class="tagline"><span class="typing-text"></span></p>
+  </div>
+
+  <div>
+    <ul class="horizontal-list text-center social-icons">
+      <li><a href="https://www.linkedin.com/in/akshay-kharpas-465377326" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/Akshay3311" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="resume-download">
+  <a href="assets/resume.pdf" download>
+    <button>Download Resume</button>
+  </a>
+</div>
 
 
-        <div id="name-social-container">
-            <div class="text-center">
-                <h1 id="my name">Akshay Kharpas</h1>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
-                </ul>
-            </div>
+  </header>
+
+  <main>
+    <section id="about" data-aos="fade-up">
+  <h2 class="section-heading">About Me</h2>
+
+  <div class="about-container">
+    <div class="about-left">
+      <img src="image/Akshay.jpg" alt="Akshay Kharpas" class="about-profile-pic"/>
+    </div>
+
+    <div class="about-right">
+      <p>Hello! I am <strong>Akshay Kharpas</strong>, a passionate web developer and data science enthusiast.</p>
+      <p>I completed my Diploma from <strong>Sanjivani K.B.P. Polytechnic</strong> with <strong>86.67%</strong> in 2024.</p>
+      <p>Currently, I am pursuing <strong>B.Tech in Artificial Intelligence & Machine Learning (AIML)</strong> from <strong>Sanjivani University</strong>.</p>
+      <p>💡 My recent project: <strong>“ML Power Plant Disease Detection System”</strong> — a machine learning-based solution to identify plant diseases from image data.</p>
+    </div>
+  </div>
+</section>
+
+ <section id="education">
+  <h2 class="section-heading">Education</h2>
+
+  <div class="education-container">
+
+    <!-- B.Tech -->
+    <div class="education-card">
+      <img src="image/University.jpeg" alt="Sanjivani University" class="edu-img">
+      <div class="edu-details">
+        <h3>B.Tech in Artificial Intelligence & Machine Learning</h3>
+        <p><strong>Institute:</strong> Sanjivani College of Engineering, Kopargaon</p>
+        <p><strong>Year:</strong> Currently in 3rd Year</p>
+        <p><strong>CGPA:</strong> 8.5</p>
+      </div>
+    </div>
+
+    <!-- Diploma -->
+    <div class="education-card">
+      <img src="image/d.jpg" alt="Sanjivani Polytechnic" class="edu-img">
+      <div class="edu-details">
+        <h3>Diploma in Mechatronics</h3>
+        <p><strong>Institute:</strong> Sanjivani K.B.P. Polytechnic, Kopargaon</p>
+        <p><strong>Year:</strong> Completed 2021 - 2024</p>
+        <p><strong>Percentage:</strong> 87.67%</p>
+      </div>
+    </div>
+
+    <!-- School -->
+    <div class="education-card">
+      <img src="images/gondegaon-school.jpg" alt="Gondegaon School" class="edu-img">
+      <div class="edu-details">
+        <h3>Primary & Secondary Education</h3>
+        <p><strong>School:</strong> Madhyamik Vidyalay, Gondegaon</p>
+        <p><strong>10th Percentage:</strong> 81.40%</p>
+        <p><strong>Year:</strong> Completed</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <section id="skills" data-aos="fade-up">
+  <h2 class="section-heading">Skills</h2>
+
+  <div class="skills-container">
+    <div class="skill">
+      <span class="skill-name">Java</span>
+      <div class="progress-bar">
+        <div class="progress" data-progress="59"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span class="skill-name">C++</span>
+      <div class="progress-bar">
+        <div class="progress" data-progress="30"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span class="skill-name">HTML</span>
+      <div class="progress-bar">
+        <div class="progress" data-progress="85"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span class="skill-name">CSS</span>
+      <div class="progress-bar">
+        <div class="progress" data-progress="80"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span class="skill-name">Python</span>
+      <div class="progress-bar">
+        <div class="progress" data-progress="70"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <span class="skill-name">Machine Learning</span>
+      <div class="progress-bar">
+        <div class="progress" data-progress="60"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects">
+  <h2 class="section-heading">Projects</h2>
+  <div class="portfolio-container">
+    
+    <!-- Project 1 -->
+    <div class="portfolio-card">
+      <img src="image/Screenshot 2025-05-08 221510.png" alt="Project 1">
+      <div class="portfolio-info">
+        <li><a href="#projects">Projects</a></li>
+        <h3>Project Title 1</h3>
+        <p>A short description of the project. Highlight key features, tools, or outcome.</p>
+        <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="portfolio-card">
+      <img src="image/project2.jpg" alt="Project 2">
+      <div class="portfolio-info">
+        <h3>Project Title 2</h3>
+        <p>Description of another project you’ve built or contributed to.</p>
+        <a href="https://github.com/yourusername/project2" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <!-- Add more projects here -->
+    
+  </div>
+</section>
+
+   
+
+    <section id="experience" data-aos="fade-up">
+      <h2 class="section-heading">Experience</h2>
+      <div class="text-center">
+        <p><strong>Intern - AI & ML</strong> | ABC Company | Jan 2025 - Mar 2025</p>
+        <p>Worked on predictive modeling using Scikit-learn and exploratory data analysis.</p>
+      </div>
+    </section>
+    
+    
+
+    <section id="portfolio" data-aos="fade-up">
+      <h2 class="section-heading">Portfolio</h2>
+      <div class="portfolio-container">
+        <div class="portfolio-card">
+          <img src="images/project1.jpg" alt="Project 1">
+          <div class="portfolio-info">
+            <h3>ML Project</h3>
+            <p>Student performance predictor using Scikit-learn.</p>
+            <a href="#">View Project</a>
+          </div>
         </div>
 
+        <div class="portfolio-card">
+          <img src="images/project2.jpg" alt="Project 2">
+          <div class="portfolio-info">
+            <h3>Personal Website</h3>
+            <p>Responsive portfolio using HTML, CSS & JS.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
 
-    </header>
-    <main>
-        <section id="about"></section>
-        <section id="skills"></section>
-        <section id="experience"></section>
-        <section id="education"></section>
-        <section id="portfolio"></section>
-        <section id="contact"></section>
-    </main>
+        <div class="portfolio-card">
+          <img src="images/project3.jpg" alt="Project 3">
+          <div class="portfolio-info">
+            <h3>DBMS Mini Project</h3>
+            <p>Library Management System using JavaFX and MySQL.</p>
+            <a href="#">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+   <section id="contact">
+  <h2 class="section-heading">Contact</h2>
+  
+  <div class="contact-container">
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:akshaykharpas111@gmail.com">akshaykharpas111@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91-9307083166</p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/akshay-kharpas" target="_blank">linkedin.com/in/akshay-kharpas</a></p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- ✅ Add this -->
+  <script>
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.progress').forEach(progress => {
+        const sectionPos = progress.getBoundingClientRect().top;
+        const screenPos = window.innerHeight;
+
+        if (sectionPos < screenPos) {
+          const value = progress.getAttribute('data-progress');
+          progress.style.width = value + '%';
+        }
+      });
+    });
+  </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const typingElement = document.querySelector(".typing-text");
+    const fullText = "Web Developer | Data Science Enthusiast";
+    let index = 0;
+
+    function type() {
+      if (index < fullText.length) {
+        typingElement.textContent += fullText.charAt(index);
+        index++;
+        setTimeout(type, 100);
+      }
+    }
+
+    type();
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const typingElement = document.querySelector(".typing-text");
+    const texts = ["Web Developer", "Data Science Enthusiast"];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const currentText = texts[textIndex];
+      const visibleText = currentText.substring(0, charIndex);
+      typingElement.textContent = visibleText;
+
+      if (!isDeleting && charIndex < currentText.length) {
+        charIndex++;
+        setTimeout(type, 100);
+      } else if (isDeleting && charIndex > 0) {
+        charIndex--;
+        setTimeout(type, 50);
+      } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) {
+          textIndex = (textIndex + 1) % texts.length;
+        }
+        setTimeout(type, 1000);
+      }
+    }
+
+    type();
+  });
+</script>
+
+
 </body>
-
-
 </html>
+
+
+<style>
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+  header, nav a {
+    flex-direction: column;
+    margin: 5px 0;
+  }
+  .projects .project-card {
+    width: 90%;
+  }
+}
+</style>
