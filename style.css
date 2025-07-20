@@ -9,7 +9,6 @@ body {
 /* Header Background */
 #body-header {
   height: 100vh;
-  background-image: url('image/dragon-blood-moon-3440x1440-11087.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -498,4 +497,40 @@ body {
 
 .resume-download button:hover {
   background-color: #0097a7;
+}
+
+.home {
+  background-color: #1f2937; /* This matches the "About Me" section background */
+  /* Optional: clean up unneeded image styles */
+  background-size: unset;
+  background-position: unset;
+}
+
+.profile-pic {
+  width: 400px;             /* Or any size you want */
+  height: 400px;
+  border-radius: 50%;       /* ✅ Makes it circular */
+  border: none;             /* ✅ Removes orange border */
+  box-shadow: none;         /* ✅ Removes glow/shadow if any */
+  object-fit: cover;        /* Keeps the image nicely cropped */
+}
+
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.profile-pic {
+  animation: fadeZoom 1s ease-out;
+}
+
+.profile-container {
+  text-align: center;
+  margin-top: 50px;
 }
